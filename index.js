@@ -27,9 +27,7 @@ app.get('/', function (request, response) {
 app.get("/crearPartida/:nick/:num",function(request,response){
 	var nick=request.params.nick;
 	var num=parseInt(request.params.num);
-	//ojo, nick nulo o numero nulo
-	//var num=4;
-	//var usr=new modelo.Usuario(nick);
+
 	var codigo=juego.crearPartida(num,nick);
 
 	response.send({"codigo":codigo});
