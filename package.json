@@ -1,0 +1,33 @@
+{
+  "name": "impostor",
+  "version": "1.0.0",
+  "description": "trabajo de procesos",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node servidor",
+    "start": "node index.js 4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroJesusNavarroBlazquez/Impostor.git"
+  },
+  "keywords": [
+    "juego"
+  ],
+  "author": "PJNB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroJesusNavarroBlazquez/Impostor/issues"
+  },
+  "homepage": "https://github.com/PedroJesusNavarroBlazquez/Impostor#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jasmine-node": "3.0.0",
+    "mongodb": "^3.6.9",
+    "socket.io": "^2.4.1"
+  },
+  "devDependencies": {
+    "bufferutil": "^4.0.2",
+    "utf-8-validate": "^5.0.3"
+  }
+}
