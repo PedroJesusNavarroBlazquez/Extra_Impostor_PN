@@ -230,7 +230,6 @@ function ServidorWS(){
                     cli.enviarATodos(io,codigo,"final","ganan impostores")
                 }
             });
-
             
         });
 

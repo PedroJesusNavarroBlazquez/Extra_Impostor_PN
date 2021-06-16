@@ -245,7 +245,7 @@ function ControlWeb($) {
 
         $('#votar').click(function () {
             if (sospechoso == undefined) {
-                cad = '<div><p id="aviso">DEBES SELECCIONAR UNA OPCIÓN</p></div>';
+                cad = '<div><p id="aviso">Debes seleccionar una opcion</p></div>';
                 $("#contenidoModal").append(cad);
             }
             else if (sospechoso != "-1") {

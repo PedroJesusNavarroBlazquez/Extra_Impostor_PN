@@ -75,6 +75,12 @@ function ClienteWS() {
         this.socket = io.connect();
         this.lanzarSocketSrv();
     }
+
+
+    
+
+
+
     this.lanzarSocketSrv = function () {
         var cli = this;
         this.socket.on('connect', function () {

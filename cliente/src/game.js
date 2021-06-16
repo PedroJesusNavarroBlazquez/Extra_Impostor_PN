@@ -482,7 +482,7 @@ const anims = crear.anims;
 }
 
 function tareas(sprite, objeto) {
-  if (/*ws.encargo==objeto.properties.color &&*/  teclaT.isDown) {
+  if (  teclaT.isDown) {
     //tareasOn=false;
     ws.realizarTarea();
     objeto.properties.color = "realizada"
@@ -546,24 +546,6 @@ function kill(sprite, inocente) {
     ws.atacar(nick);
   }
 }
-
-/*function dibujarMuereInocente(inocente) {
-
-  //dibujar sprite tumbado
-  //meter sprite en grupo de muertos
-  //crear colision
-  var x = jugadores[inocente].x;
-  var y = jugadores[inocente].y;
-  var numJugador = jugadores[inocente].numJugador;
-  var nick = jugadores[inocente].nick;
-  jugadore[inocente].estaVivo() = false;
-  var muerto = crear.physics.add.sprite(x, y, "muertos", recursos2[numJugador].frame);
-  //jugadores[inocente].setTexture("muertos", recurso...)
-  //agregar jugadores[nick] al grupo de muertos
-  muertos.add(muerto);
-  console.log(nick + numJugador)
-  crear.physics.add.overlap(player, muertos, votacion);
-}*/
 
 function dibujarMuereInocente(inocente) {
   var x = jugadores[inocente].x;
